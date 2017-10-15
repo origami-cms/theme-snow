@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700|Work+Sans:300,400,600');
+
+@each $size, $value in $fs {
+    .font-#{$size} { font-size: $value; }
+}
+
+
+// -------------------------------------------------------------------- Headings
+h1 {
+    font-size: 7.2rem;
+    color: color('main');
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.4rem;
+    color: color('main');
+}
+
+
+// ----------------------------------------------------------------------- Links
+a {
+    text-decoration: none;
+    color: color('alt');
+}

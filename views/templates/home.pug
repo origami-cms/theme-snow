@@ -1,0 +1,20 @@
+extends ../master
+append css
+    link(rel="stylesheet", href="/css/home.css")
+
+append js
+    script(src='/assets/js/home.js')
+block content
+    section.header
+        header
+            img.logo(src='/content/images/logo.svg')
+
+        .center.width-100
+            h1(data-words=page.data.titleWords) #{page.data.titlePrefix}
+                span
+            h2 #{page.data.subtitle}
+
+        footer.links
+            ul
+                for link in page.data.headerLinks
+                    li #[a.button.font-large.cover(href=link.url class=`color-${link.color}`)= link.text]

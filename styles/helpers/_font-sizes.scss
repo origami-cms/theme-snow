@@ -1,0 +1,12 @@
+$fs: (
+    small: 1.2rem,
+    main: 1.6rem,
+    large: 1.8rem,
+    xlarge: 2.4rem,
+    super: 3.6rem,
+    hero: 7.2rem
+);
+
+@function fs($size) {
+    @return map-get($fs, $size);
+}

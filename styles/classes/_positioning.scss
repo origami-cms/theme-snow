@@ -1,0 +1,33 @@
+// ------------------------------------------------------------------- Centering
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-h {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center-v {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// ---------------------------------------------------------------------- Widths
+@for $i from 1 to 11 {
+    .width-#{$i * 10} { width: $i * 10%;}
+}
+
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,14 @@
+$main: #693a91;
+$colors: (
+    main: $main,
+    alt: #23a8e6,
+    accent: #f8aa12,
+    accent-dark: #d4900c,
+    success: #28c787,
+
+    'shade-0': rgba($main, 0.05)
+);
+
+@function color($color) {
+    @return map-get($colors, $color);
+}

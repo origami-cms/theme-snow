@@ -1,0 +1,60 @@
+@import "helpers/import";
+
+@keyframes cursor {
+    0%, 49% {
+        border-right-color: transparent;
+    }
+    51%, 99% {
+        border-right-width: color('main');
+    }
+}
+
+section.header {
+    min-height: 100vh;
+
+    text-align: center;
+
+    background-image: url(/assets/images/patterns/waves.svg);
+    header, footer {
+        height: 12rem;
+
+        text-align: center;
+
+        background-color: white;
+
+        line-height: 12rem;
+
+        img {
+            vertical-align: middle;
+        }
+
+    }
+    h1 span {
+        border-right: 0.3rem solid color('main');
+        &.blink { animation: cursor 1s infinite; }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+
+        ul {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            li {
+                flex: 1;
+                border-right: 1px solid color('shade-0');
+                position: relative;
+                height: 12rem;
+                a {
+                    line-height: 12rem;
+                }
+            }
+        }
+
+    }
+}

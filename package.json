@@ -1,0 +1,10 @@
+{
+  "name": "origami-theme-snow",
+  "version": "0.0.1",
+  "description": "Default theme for Origami",
+  "main": "index.js",
+  "repository": "https://github.com/origami-cms/theme-snow.git",
+  "author": "Tristan Matthias <hello@tristanmatthias.com>",
+  "license": "MIT",
+  "dependencies": {}
+}

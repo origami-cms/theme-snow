@@ -1,0 +1,8 @@
+{
+    "name": "Snow",
+    "paths": {
+        "styles": "./styles",
+        "views": "./views",
+        "content": "./content"
+    }
+}

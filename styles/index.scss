@@ -1,0 +1,14 @@
+@import "helpers/import";
+@import "lib/import";
+@import "classes/import";
+@import "components/import";
+
+html {
+    font-size: 10px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
