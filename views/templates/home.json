@@ -1,0 +1,19 @@
+{
+    "properties": {
+        "titlePrefix": {
+            "type": "string",
+            "label": "Title"
+        },
+        "subtitle": {
+            "type": "string",
+            "label": "Subtitle"
+        },
+        "titleWords": {
+            "type": "array",
+            "children": {
+                "type": "string"
+            },
+            "label": "Title words"
+        }
+    }
+}
