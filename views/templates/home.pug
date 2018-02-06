@@ -14,7 +14,8 @@ block content
                 span
             h2 #{page.data.subtitle}
 
-        footer.links
-            ul
-                for link in page.data.headerLinks
-                    li #[a.button.font-large.cover(href=link.url class=`color-${link.color}`)= link.text]
+        if (page.data.headerLinks)
+            footer.links
+                ul
+                    for link in page.data.headerLinks
+                        li #[a.button.font-large.cover(href=link.url class=`color-${link.color}`)= link.text]

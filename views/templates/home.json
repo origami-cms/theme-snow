@@ -2,7 +2,8 @@
     "properties": {
         "titlePrefix": {
             "type": "string",
-            "label": "Title"
+            "label": "Title",
+            "required": true
         },
         "subtitle": {
             "type": "string",
